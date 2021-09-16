@@ -1,0 +1,148 @@
+/* Importar fuentes personalizables */
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("fonts/Ubuntu.ttf");
+}
+
+@font-face {
+    font-family: "daddy";
+    src: url("fonts/Daddy.ttf");
+}
+
+/* Generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "ubuntu", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: #373958;
+    background-attachment: fixed;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* Barra de navegacion - Header */
+
+header {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background:  #282a36;
+    position: fixed;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: block;
+    width: 55%;
+    height: inherit;
+    margin: 0px auto;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 90px;
+}
+
+header a {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+header a:hover, .actived{
+    color: #bd93f9;
+}
+
+/* Barra de navegacion - Header */
+#logo{
+    font-family: "daddy";
+    font-size: 30px;
+}
+
+#logo a{
+    transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover{
+    background: transparent;
+    color: #bd93f9;
+    transform: scale(1.50, 1.50);
+}
+
+/* Contenedor principal */
+
+#content {
+    min-height: 500px;
+    width: 75%;
+    margin: 0px auto;
+    border-left: 1px solid #373958;
+    padding-top: 120px;
+}
+
+
+/* Pie de pagina */
+footer {
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Sobre mi */
+#title{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+#title h1{
+    font-family: "daddy";
+    font-size: 60px;
+    border-bottom: 1px solid #fded32;
+    padding-bottom: 5px;    
+    color: #bd93f9;
+
+}
+
+#title h2{
+    font-size: 25px;
+    color: #aaafbb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2{
+    border-bottom: 1px solid #aaafbb;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
